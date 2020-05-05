@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salesforce Admin Guide</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+    }
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: blue;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Go to top button -->
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <!-- Go to top button -->
+
+  <h1>Salesforce Admin (201) - 2020 Certification Exam Tips</h1>
+  <hr>
+  <h2>Knowledge Areas</h2>
+  <h3>1. Organization Setup</h3>
+  <ul>
+    <li> <strong>Fiscal Year Setup</strong></li><br>
+    <p><strong>Setup >> Quick Find >> Company Settings >> Fiscal Year </strong></p>
+    <table border="1">
+      <tr>
+        <td><strong>Sr. No</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>Salesforce Help Link</strong></td>
+      </tr>
+      <tr>
+        <td>1.0</td>
+        <td>If your fiscal year follows the Gregorian calendar, but does not start in January,
+          you can define a standard fiscal year with a different starting month</td>
+        <td><a href="https://help.salesforce.com/articleView?id=admin_about_cfy.htm&type=5">Link</a></td>
+      </tr>
+      <tr>
+        <td>2.0</td>
+        <td>Standard fiscal years follow the Gregorian calendar, but can start on the first day of any month of the year</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3.0</td>
+        <td>After you enable custom fiscal years, you <strong>can’t disable the feature</strong> </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>4.0</td>
+        <td>After enabling custom fiscal years, your organization's fiscal years will no longer be automatically defined by salesforce.com.
+          The only fiscal years available for reports, quotas, forecasts, and so on will be those defined by your organization</td>
+        <td></td>
+      <tr>
+        <td>5.0</td>
+        <td>If you have forecasting features enabled, creating the initial custom fiscal year deletes all quotas and adjustments
+          from that year forward.</td>
+        <td></td>
+      </tr>
+    </table><br>
+    <li> <strong> Organization's Business Hours Setup</strong></li><br>
+    <p><strong>Setup >> Quick Find >> Company Settings >> Business Hours </strong></p>
+    <table border="1">
+      <tr>
+        <td><strong>Sr. No</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>Salesforce Help Link</strong></td>
+      </tr>
+      <tr>
+        <td>1.0</td>
+        <td>Setting Business Hours specify the hours when your support team is available to serve customers</td>
+        <td><a href="https://help.salesforce.com/articleView?err=1&id=customize_supporthours.htm&type=5">Link</a></td>
+      </tr>
+      <tr>
+        <td>2.0</td>
+        <td>Setting business hours lets you apply specific time zones and locations: Milestones in entitlement processes,
+          Entitlement processes,Cases,Case escalation rules </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3.0</td>
+        <td>Leave the business hours start and end times blank and the 24 hours checkbox deselected to indicate that
+          the support team is not available at all that day.</td>
+        <td></td>
+      </tr>
+    </table><br>
+
+    <li> <strong>Currency Management</strong> </li><br>
+    <p><strong>Setup >> Quick Find >> Company Settings >> Company Information >> Edit </strong></p>
+    <p>Enable Multiple Currencies</p>
+    <table border="1">
+      <tr>
+        <td><strong>Sr. No</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>Salesforce Help Link</strong></td>
+      </tr>
+      <tr>
+        <td>1.0</td>
+        <td>Before your organization can use multiple currencies, the feature must be turned on</td>
+        <td> <a href="https://help.salesforce.com/articleView?id=admin_enable_multicurrency.htm&type=5">Link</a> </td>
+      </tr>
+      <tr>
+        <td>2.0</td>
+        <td>Enabling multiple currencies introduces permanent changes in your organization</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3.0</td>
+        <td>Ensure that your selected currency locale is the <strong> default (base or corporate) currency </strong> that you want to use for current and future records
+          and exchange rate is based on that corporate currency</td>
+        <td></td>
+      </tr>
+    </table><br>
+
+    <p> <strong>Currency Setup</strong> </p>
+    <p><strong>Setup >> Quick Find >> Company Settings >> Company Information >> Currency Setup </strong></p>
+
+    <table border="1">
+      <tr>
+        <td><strong>Sr. No</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>Salesforce Help Link</strong></td>
+      </tr>
+      <tr>
+        <td>1.0</td>
+        <td>Used to define all the currencies used by your organization</td>
+        <td> <a href="https://help.salesforce.com/articleView?id=admin_currency.htm&type=5">Link</a> </td>
+      </tr>
+
+      <tr>
+        <td>2.0</td>
+        <td>Used to Enable / Disable advance currency Management (dated exchange rate)</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>3.0</td>
+        <td>Used to Enable / Disable Parenthetical Currency Conversion. This is enabled automatically once advance Currency
+        is enabled. Disabling it will display the currency in select currency value only</td>
+        <td></td>
+      </tr>
+
+    </table><br>
+
+    <li> <strong>Organization default Settings</strong> </li><br>
+    <p><strong>Setup >> Quick Find >> Company Settings >> Company Information >> Edit </strong></p>
+
+    <table border="1">
+      <tr>
+        <td><strong>Sr. No</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>Salesforce Help Link</strong></td>
+      </tr>
+
+        <tr>
+          <td>1.0</td>
+          <td>Default Locale. Profile Image-> Settings -> Language and Time Zone</td>
+          <td> <a href="https://help.salesforce.com/articleView?id=usersetup_lang_time_zone.htm&type=5">Link</a> </td>
+        </tr>
+
+        <tr>
+          <td>2.0</td>
+          <td>Default Language. User default Language over-rides the company Language setting</td>
+          <td></td>
+        </tr>
+          <tr>
+            <td>3.0</td>
+            <td>Default Time zone</td>
+            <td></td>
+          </tr>
+    </table><br>
+
+    <li> <strong>User Interface</strong> </li>
+
+    <li> <strong>User Management</strong> </li>
+
+    <li> <strong>Search Settings</strong> </li>
+
+    <li> <strong>Creating and Filtering List View</strong> </li>
+
+    <li> <strong>Creating Kanban List View</strong> </li>
+
+    <li> <strong>Customizing Home Page</strong> </li>
+
+    <li> <strong>Themes and Branding</strong> </li>
+
+
+    </ul>
+
+</body>
+
+</html>
