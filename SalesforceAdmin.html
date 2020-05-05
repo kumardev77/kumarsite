@@ -10,6 +10,12 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 12px;
+      background-color: #21243d;
+      color: #ff7c7c;
+    }
+
+    h1 {
+      color: #ffa41b;
     }
 
     #myBtn {
@@ -67,7 +73,7 @@
 
   <!-- Go to top button -->
 
-  <h1>Salesforce Admin (201) - 2020 Certification Exam Tips</h1>
+  <h1>Salesforce Admin (201) - 2020 Certification Exam Preparation Guide</h1>
   <hr>
   <h2>Knowledge Areas</h2>
   <h3>1. Organization Setup</h3>
@@ -186,13 +192,13 @@
       <tr>
         <td>3.0</td>
         <td>Used to Enable / Disable Parenthetical Currency Conversion. This is enabled automatically once advance Currency
-        is enabled. Disabling it will display the currency in select currency value only</td>
+          is enabled. Disabling it will display the currency in select currency value only</td>
         <td></td>
       </tr>
 
     </table><br>
 
-    <li> <strong>Organization default Settings</strong> </li><br>
+    <li> <strong>Organization Default Settings</strong> </li><br>
     <p><strong>Setup >> Quick Find >> Company Settings >> Company Information >> Edit </strong></p>
 
     <table border="1">
@@ -202,40 +208,151 @@
         <td><strong>Salesforce Help Link</strong></td>
       </tr>
 
-        <tr>
-          <td>1.0</td>
-          <td>Default Locale. Profile Image-> Settings -> Language and Time Zone</td>
-          <td> <a href="https://help.salesforce.com/articleView?id=usersetup_lang_time_zone.htm&type=5">Link</a> </td>
-        </tr>
+      <tr>
+        <td>1.0</td>
+        <td>Default Locale. Profile Image-> Settings -> Language and Time Zone</td>
+        <td> <a href="https://help.salesforce.com/articleView?id=usersetup_lang_time_zone.htm&type=5">Link</a> </td>
+      </tr>
 
-        <tr>
-          <td>2.0</td>
-          <td>Default Language. User default Language over-rides the company Language setting</td>
-          <td></td>
-        </tr>
-          <tr>
-            <td>3.0</td>
-            <td>Default Time zone</td>
-            <td></td>
-          </tr>
+      <tr>
+        <td>2.0</td>
+        <td>Default Language. User default Language over-rides the company Language setting</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3.0</td>
+        <td>Default Time zone</td>
+        <td></td>
+      </tr>
     </table><br>
 
     <li> <strong>User Interface</strong> </li>
-
+    <p> <strong>Setup >> Quick Find >> User Interface >> User Interface </strong> </p>
+    <p>Modify your org’s user interface by enabling or disabling these settings</p>
+    <a href="https://help.salesforce.com/articleView?err=1&id=customize_ui_settings.htm&type=5">Salesforce Help Page -> User Interface Settings </a>
+    <br>
+    <br>
     <li> <strong>User Management</strong> </li>
+    <p> <strong>Setup >> Quick Find >> User Management Settings </strong> </p>
+    <p>Enhanced Profile List Views</p>
+    <ul>
+      <li>
+        <p>Create profile list views with the fields you choose. For example, create a list view of all profiles with the "Modify All Data" permission.</p>
+      </li>
+    </ul>
 
-    <li> <strong>Search Settings</strong> </li>
+    <p>Enhanced Profile User Interface</p>
+    <ul>
+      <li>
+        <p>Browse, search, and modify settings and permissions in a profile through a streamlined user interface.</p>
+      </li>
+    </ul>
+
+    <p>User Self Deactivate</p>
+    <ul>
+      <li>
+        <p>Allow external users to deactivate their own accounts</p>
+      </li>
+    </ul>
+
+
+    <p>Hide Personal Information</p>
+    <ul>
+      <li>
+        <p>Hide some personal information fields in user records from external users.</p>
+      </li>
+    </ul>
+
+    <p>Scramble Specific Users’ Data</p>
+    <ul>
+      <li>
+        <p>Honor your users’ requests when they no longer want their personal data recognized in Salesforce. After turning on
+          this option, you can invoke the Apex method, obfuscateUser, which permanently scrambles those specific users’ data. Keep in
+          mind that when you invoke that Apex method, those users’ data becomes anonymous, and you can never recover it.</p>
+      </li>
+    </ul>
+
+    <p>Enhanced Permission Set Component Views</p>
+    <ul>
+      <li>
+        <p>Use an updated user experience for portions of the permission set user interface.</p>
+      </li>
+    </ul>
+
+
+    <a href="https://help.salesforce.com/articleView?id=users_mgmt_settings.htm&type=5">Salesforce Help Page -> User Management Settings </a>
+    <br>
+    <br>
+
+    <li> <strong>Search Settings (Available in Salesforce Classic Only)</strong> </li>
+    <p>Modify your organization's search interface with the following settings:</p>
+    <p>Number of Search Results Displayed Per Object</p>
+    <ul>
+      <li>
+        <p>Specify the number of records to display for each object on the Search Results page. The current setting is listed
+          next to each object in parentheses. To make changes, select one or more objects, enter the new number of results per page,
+          and click Save. The new value must be between 5 and 50</p>
+      </li>
+    </ul>
+    <p>Lookup Settings</p>
+    <ul>
+      <li>
+        <p>Enhanced lookups provide an updated lookup dialog interface that gives users the ability to filter, sort, and page
+          through results as well as customize columns</p>
+      </li>
+      <li>Lookup auto-completion displays suggestions from the Recent Items list as you type.</li>
+    </ul>
+    <br>
+
+    <a href="https://help.salesforce.com/articleView?err=1&id=customize_search_settings.htm&type=5">Salesforce Help Page -> Search Settings </a>
+    <br>
+    <br>
 
     <li> <strong>Creating and Filtering List View</strong> </li>
 
+    <ul>
+      <li>
+        <p>List view can be shared with group of users based on Roles and Roles & Subordinates</p>
+      </li>
+      <li>
+        <p>List view can be view by the owner of the record (Only I can see this list view option)</p>
+      </li>
+      <li>
+        <p>List view can be view by all users (All users can see this list viw option)</p>
+      </li>
+    </ul>
+
     <li> <strong>Creating Kanban List View</strong> </li>
 
-    <li> <strong>Customizing Home Page</strong> </li>
+    <ul>
+      <li>
+        <p>Grouped record item can be dragged and dropped in Kanban list view. </p>
+      </li>
+      <li>
+        <p>By hovering over Kanbon list view user can find option to add new task or new event. </p>
+      </li>
+      <li>
+        <p>Kanban list view allow the user to group by values based on available picklist values for the object.</p>
+      </li>
+    </ul>
+
+    <li> <strong>Customizing Home Page</strong> </li><br>
+    <p>This user interface is available in both Classic and lighting</p>
+    <p>In Classic</p>
+    <strong> Setup >> Quick Find >> Home Page Layout  </strong>
+    <ul>
+        <li> <p>DE_Default home page is editable</p> </li>
+    </ul>
 
     <li> <strong>Themes and Branding</strong> </li>
-
-
+    <p> <strong> Setup >> Quick Find >> Themes and Branding  </strong> </p>
+    <ul>
+      <li> <p>This user interface available in only available in lighting only.</p> </li>
+      <li> <p>User can create new thems.</p> </li>
+      <li> <p> User can create group banner and user profile banner when customizing new themes.</p> </li>
     </ul>
+
+  </ul>
 
 </body>
 
