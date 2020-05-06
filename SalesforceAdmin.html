@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Salesforce Admin Guide</title>
+  <title>SF - Organization Setup</title>
 
   <style>
     body {
@@ -37,6 +37,34 @@
     #myBtn:hover {
       background-color: #555;
     }
+
+// breadcrumb style
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+
+
   </style>
 
 </head>
@@ -73,10 +101,18 @@
 
   <!-- Go to top button -->
 
-  <h1>Salesforce Admin (201) - 2020 Certification Exam Preparation Guide</h1>
+  <h1>Knowledge Areas - Organization Setup</h1>
+
+
+
+  <ul class="breadcrumb">
+    <li><a href="Sfadmin.html">Home</a></li>
+    <li><a href="#">Organization Setup</a></li>
+  </ul>
+
+
   <hr>
-  <h2>Knowledge Areas</h2>
-  <h3>1. Organization Setup</h3>
+
   <ul>
     <li> <strong>Fiscal Year Setup</strong></li><br>
     <p><strong>Setup >> Quick Find >> Company Settings >> Fiscal Year </strong></p>
@@ -339,17 +375,25 @@
     <li> <strong>Customizing Home Page</strong> </li><br>
     <p>This user interface is available in both Classic and lighting</p>
     <p>In Classic</p>
-    <strong> Setup >> Quick Find >> Home Page Layout  </strong>
+    <strong> Setup >> Quick Find >> Home Page Layout </strong>
     <ul>
-        <li> <p>DE_Default home page is editable</p> </li>
+      <li>
+        <p>DE_Default home page is editable</p>
+      </li>
     </ul>
 
     <li> <strong>Themes and Branding</strong> </li>
-    <p> <strong> Setup >> Quick Find >> Themes and Branding  </strong> </p>
+    <p> <strong> Setup >> Quick Find >> Themes and Branding </strong> </p>
     <ul>
-      <li> <p>This user interface available in only available in lighting only.</p> </li>
-      <li> <p>User can create new thems.</p> </li>
-      <li> <p> User can create group banner and user profile banner when customizing new themes.</p> </li>
+      <li>
+        <p>This user interface available in only available in lighting only.</p>
+      </li>
+      <li>
+        <p>User can create new thems.</p>
+      </li>
+      <li>
+        <p> User can create group banner and user profile banner when customizing new themes.</p>
+      </li>
     </ul>
 
   </ul>
